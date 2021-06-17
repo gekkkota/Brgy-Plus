@@ -8,15 +8,16 @@
     tools:context=".Signup">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/BrgyPlusLogoName"
         android:layout_width="214dp"
         android:layout_height="80dp"
         android:contentDescription="@string/app_logo_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.120000005"
+        app:layout_constraintVertical_bias="0.073"
         app:srcCompat="@drawable/applogo" />
 
     <TextView
@@ -28,7 +29,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/BrgyPlusLogoName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <EditText
@@ -44,9 +45,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_in"
-        app:layout_constraintVertical_bias="0.050000012" />
+        app:layout_constraintVertical_bias="0.085" />
 
     <EditText
         android:id="@+id/last_name"
@@ -109,7 +111,8 @@
         android:id="@+id/register_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="8dp"
         android:text="@string/register_text"
         app:layout_constraintStart_toStartOf="@+id/confirm_password"
         app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
@@ -118,20 +121,22 @@
         android:id="@+id/to_sign_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="@string/already_have_text"
         android:textColor="#BF360C"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
 
     <TextView
         android:id="@+id/developer_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="132dp"
         android:text="@string/developer_name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/to_sign_in" />
 

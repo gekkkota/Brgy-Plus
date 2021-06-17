@@ -8,7 +8,7 @@
     tools:context=".SignIn">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/BrgyPlusLogoName"
         android:layout_width="214dp"
         android:layout_height="80dp"
         android:contentDescription="@string/app_logo_desc"
@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/BrgyPlusLogoName"
         app:layout_constraintVertical_bias="0.01999998" />
 
     <EditText
@@ -62,9 +62,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sign_in" />
 
     <Button
-        android:id="@+id/register_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/SignInButton"
+        android:layout_width="352dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:text="@string/sign_in_text"
         app:layout_constraintStart_toStartOf="@+id/checkBox"
@@ -78,18 +79,20 @@
         android:text="@string/create_account_text"
         android:textColor="#311B92"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/developer_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="156dp"
         android:text="@string/developer_name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/to_sign_in" />
+        app:layout_constraintTop_toBottomOf="@+id/SignInButton" />
 
     <CheckBox
         android:id="@+id/checkBox"

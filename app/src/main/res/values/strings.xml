@@ -14,7 +14,7 @@
     <string name="confirm_password_hint">Confirm password</string>
     <string name="register_text">REGISTER</string>
     <string name="already_have_text">Already have an account? Sign in here</string>
-    <string name="developer_name">Developed by: A n A</string>
+    <string name="developer_name">Developed by: A&amp;A</string>
 
     <string name="sign_in_text">SIGNIN</string>
     <string name="create_account_text">Create an account here</string>
