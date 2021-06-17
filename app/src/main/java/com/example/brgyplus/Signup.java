@@ -49,6 +49,8 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
         confirmPassword = (EditText) findViewById(R.id.confirm_password);
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -135,6 +137,8 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
                                         progressBar.setVisibility(View.GONE);
 
                                         // redirect to login layout!
+                                        startActivity(new Intent(Signup.this, SignIn.class));
+
                                     }else{
                                         Toast.makeText(Signup.this, "Failed to register. Try again!" + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                                         progressBar.setVisibility(View.GONE);
