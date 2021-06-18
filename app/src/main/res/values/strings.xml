@@ -19,4 +19,9 @@
     <string name="sign_in_text">SIGNIN</string>
     <string name="create_account_text">Create an account here</string>
     <string name="remember_me_text">Remember me</string>
+
+    <string name="barangay_BC"> Barangay Business Clearance</string>
+    <string name="barangay_C"> Barangay Clearance</string>
+    <string name="barangay_Certificate"> Barangay Certificate</string>
+    <string name="other_concern"> Other Concern</string>
 </resources>
